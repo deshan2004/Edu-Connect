@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>EDUCONNECT</title>
+    <link rel="stylesheet" href="./Style/About.css"/>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="EduConnect Logo"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutUs.html">ABOUT</a></li>
+            <li><a href="items.html">MENU </a></li>
+            <li><a href="Reservation.html">ENROLL</a></li>
+            <li><a href="contactUs.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Edu Connect</h1>
+          <br>
+          <p>
+            EduConnect is a powerful and user-friendly Learning Management System (LMS) built to simplify and enhance 
+            the way education is delivered online. Designed for schools, universities, training institutes, and individual
+             educators, EduConnect bridges the gap between teaching and learning by offering a seamless digital 
+             environment where interaction, engagement, and progress thrive.
+            <br><br>
+            Our platform focuses on three key pillars: simplicity, efficiency, and accessibility. Whether you're 
+            a student exploring new subjects or an instructor managing multiple courses, EduConnect intuitive interface 
+            makes navigation and communication effortless. It empowers learners to take charge of their educational 
+            journey while giving educators the tools they need to deliver structured and impactful content.
+            <br><br>
+            EduConnect includes a wide range of essential features such as course creation, video lectures, 
+            assessments, assignment submissions, discussion forums, and performance tracking — all within a 
+            centralized platform. With real-time communication tools and progress analytics, both students and 
+            teachers stay informed, connected, and engaged throughout the learning process.
+            <br><br>
+            One of EduConnect is strengths lies in its responsive design. Fully compatible with desktops, tablets, 
+            and smartphones, the platform ensures that learners can access their coursework from anywhere, at any time. 
+            This flexibility makes it ideal for today is fast-paced, mobile world where learning must fit around diverse 
+            schedules and lifestyles.
+          </p>
+          <a href="items.html" class="hero-btn red-btn">Explore Now!</a>
+        </div>
+        <div class="about-col">
+          <img src="images/aboot.jpg"/>
+        </div>
+      </div>
+    </section>
+    
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>EDUCONNECT - Learn. Connect. Grow.</p>
+      <br>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        console.log("menu clicked!");
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        console.log("close clicked!");
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>EduConnect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section class="header">
+  <video autoplay muted loop playsinline id="header-video">
+    <source src="videos/Computer.mp4" type="video/mp4">
+    <!-- Fallback image if video doesn't load -->
+    <img src="images/bg1.jpg" alt="Background fallback">
+  </video>
+
+  <div class="video-overlay"></div>
+
+  <nav>
+    <a href="index.html"><img src="images/logo.png" alt="EduConnect Logo"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutUs.html">ABOUT</a></li>
+        <li><a href="items.html">MENU</a></li>
+        <li><a href="Reservation.html">ENROLL</a></li>
+        <li><a href="contactUs.html">CONTACT</a></li>
+        <li><a href="Home.html" class="hero-btn">SIGNOUT</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+  <div class="text-box">
+    <h1>WELCOME TO</h1>
+    <h1>EDUCONNECT</h1>
+    <p>"Empowering learning through connection, innovation, and accessibility."</p>
+  </div>
+</section>
+
+  <section class="facilities">
+    <h1 style="text-align: center">Course Categories</h1>
+    <p style="text-align: center">
+      Explore our diverse fields of learning and professional development.
+    </p>
+    <div class="row" style="display: flex; justify-content: space-between;">
+      <div class="cousin-col" style="position: relative; width: 30%;">
+          <img src="images/engineering.png" style="width: 100%; height: 200px; object-fit: cover;" />
+          <div class="layer" style="position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.5); color: #fff; width: 100%; text-align: center;">
+              <h3>Engineering</h3>
+          </div>
+      </div>
+      <div class="cousin-col" style="position: relative; width: 30%;">
+          <img src="images/intro1.jpg" style="width: 100%; height: 200px; object-fit: cover;" />
+          <div class="layer" style="position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.5); color: #fff; width: 100%; text-align: center;">
+              <h3>Computing</h3>
+          </div>
+      </div>
+      <div class="cousin-col" style="position: relative; width: 30%;">
+          <img src="images/Marketing.jpg" style="width: 100%; height: 200px; object-fit: cover;" />
+          <div class="layer" style="position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.5); color: #fff; width: 100%; text-align: center;">
+              <h3>Management</h3>
+          </div>
+      </div>
+  </section>
+
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>All-in-one LMS platform</p>
+    <div class="row">
+      <div
+        class="row"
+        style="
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          padding: 20px;
+          background-color: #f9f9f9;
+        "
+      >
+        <div
+          class="facilities-col"
+          style="
+            flex: 1;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <img
+            src="images/adminuser.jpeg"
+            class="facilities-col-img"
+            style="
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-radius: 10px 10px 0 0;
+            "
+          />
+          <h3 style="margin: 10px 0; color: #333">Admin, Staff and User Login</h3>
+          <p style="color: #666">
+            You can easily log in using your email and password.
+          </p>
+        </div>
+        <div
+          class="facilities-col"
+          style="
+            flex: 1;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <img
+            src="images/available_courses.jpg"
+            class="facilities-col-img"
+            style="
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-radius: 10px 10px 0 0;
+            "
+          />
+          <h3 style="margin: 10px 0; color: #333">Access Information Easily</h3>
+          <p style="color: #666">Find pricing and course details directly on the platform.</p>
+        </div>
+        <div
+          class="facilities-col"
+          style="
+            flex: 1;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <img
+            src="images/enroll.jpg"
+            class="facilities-col-img"
+            style="
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-radius: 10px 10px 0 0;
+            "
+          />
+          <h3 style="margin: 10px 0; color: #333">Easily Enrollment</h3>
+          <p style="color: #666">
+            Enjoy a free contacting facility for your satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h1>Contact us to learn more<br>from anywhere in the world</h1>
+    <a href="contactUs.html" class="hero-btn">CONTACT US</a>
+  </section>
+
+  <section class="footer">
+    <h4>ABOUT US</h4>
+    <p>EDUCONNECT - Learn. Connect. Grow.</p>
+  </section>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>

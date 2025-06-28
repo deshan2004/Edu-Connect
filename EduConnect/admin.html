@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Administrator Dashboard</title>
+    <link rel="stylesheet" href="./Style/administrator_modifications.css" />
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/logo.png" style="height: 150px; width: 150px">
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="items.html">Courses</a>
+        </li>
+        <li>
+          <a href="./PHP/acount_create.php">Accounts</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <h1>Administrator Dashboard</h1>
+        <div class="user-wrapper">
+          <div>
+            <h4>Admin</h4>
+            <small>Maleesha Sanjana</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="overview">
+        <h2>Overview</h2>
+        <div class="overview-cards">
+          <div class="overview-card">
+            <div>
+              <h3>5100</h3>
+              <p>Visitors Today</p>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div>
+              <h3>10, 100</h3>
+              <p>All Registered Students</p>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div>
+              <h3>90</h3>
+              <p>New Users Today</p>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div>
+              <h3>12</h3>
+              <p>Today News</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="card-single">
+          <div>
+            <h3>Accounts</h3>
+            <p>Manage account creation for staff & Users</p>
+            <button onclick="window.location.href='./PHP/acount_create.php';">
+              Manage Accounts
+            </button>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div>
+            <h3>Courses & News Details</h3>
+            <p>Manage Courses and News Details</p>
+            <button onclick="window.location.href='./PHP/ADMIN.php';">
+              Manage Courses & News
+            </button>
+          </div>
+          <div>
+            <i class="fas fa-utensils"></i>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <p style="font-size: larger;">EduConnect</p>
+          <p>Administrator Panel</p>
+          <p>All Right Reserved</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

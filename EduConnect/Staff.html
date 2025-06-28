@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Edu Connect</title>
+    <link rel="stylesheet" href="./Style/Register.css" />
+    <style>
+      .button-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .styled-button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin: 10px;
+        text-decoration: none;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+
+      .styled-button:hover {
+        background-color: #218838;
+        transform: scale(1.05);
+      }
+
+      .styled-button.button1 {
+        background-image: url("./images/bac-2.jpeg");
+      }
+
+      .styled-button.button2 {
+        background-image: url("./images/bac-1.avif");
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      style="
+        background-image: linear-gradient(
+            rgba(4, 9, 30, 0.7),
+            rgba(4, 9, 30, 0.7)
+          ),
+          url(./images/staff.jpg);
+      "
+      class="sub-header"
+    >
+      <nav>
+        <a
+          href="index.html"
+          style="
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+        >
+          Edu Connect
+        </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Home.html">HOME</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>STAFF</h1>
+    </section>
+
+    <section class="facilities">
+      <h1>Managing Tasks</h1>
+      <p>Easily Manage Details</p>
+      <div onclick="" class="row">
+        <div class="facilities-col">
+          <img
+            src="images/enroll.jpg"
+            class="facilities-col-img"
+          />
+          <h3>Manage Enrollment</h3>
+          <p>
+           Confirm or Cancel the enrollment
+          </p>
+          <button
+            onclick="window.location.href = './PHP/view_Reservation.php';"
+            style="font-size: 18px; padding: 15px 30px; background-color: #28a745; color: white; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease, transform 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#218838'; this.style.transform='scale(1.05)';"
+            onmouseout="this.style.backgroundColor='#28a745'; this.style.transform='scale(1)';"
+          >
+            Enrollment
+          </button>
+        </div>
+
+        <div class="facilities-col">
+          <img
+            src="images/contact.jpg"
+            class="facilities-col-img"
+          />
+          <h3>Manage Contacting</h3>
+          <p>
+          Confirm Or Cancel the Contacting
+          </p>
+          <button
+            onclick="window.location.href = './PHP/manage_contacts.php';""
+            style="font-size: 18px; padding: 15px 30px; background-color: #28a745; color: white; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease, transform 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#218838'; this.style.transform='scale(1.05)';"
+            onmouseout="this.style.backgroundColor='#28a745'; this.style.transform='scale(1)';"
+          >
+            Contacting
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>EDUCONNECT - Learn. Connect. Grow.</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        console.log("menu clicked!");
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        console.log("close clicked!");
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

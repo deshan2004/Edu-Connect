@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Edu Connect</title>
+    <link rel="stylesheet" href="./Style/Register.css" />
+  </head>
+  <body>
+    <section
+      style="
+        background-image: linear-gradient(
+            rgba(4, 9, 30, 0.7),
+            rgba(4, 9, 30, 0.7)
+          ),
+          url(./images/contact.jpg);
+      "
+      class="sub-header"
+    >
+      <nav>
+        <a
+          href="index.html"
+          style="
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+        >
+          Edu Connect
+        </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact_user.html">CONTACT</a></li>
+            <li><a href="Registration.html">REGISTER</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>IT Park, Millennium Dr</h5>
+              <p>Malabe</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+94 3214755428</h5>
+              <p>Monday to Sunday, 8.30 A.M. to 4.00 P.M.</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>educonnect@gmail.com</h5>
+              <p>Get More Informations</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter Your Name" required />
+            <input type="email" placeholder="Enter Email Address" required />
+            <input type="text" placeholder="Enter Address" required />
+            <textarea rows="8" placeholder="Enter Your Message"></textarea>
+            <button
+              type="submit"
+              class="hero-btn red-btn"
+              onclick="location.href='home.html'"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>EDUCONNECT - Learn. Connect. Grow.</p>
+    </section>
+
+    
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        console.log("menu clicked!");
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        console.log("close clicked!");
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    
+  </body>
+</html>

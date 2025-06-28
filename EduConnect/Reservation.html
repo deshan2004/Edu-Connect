@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Edu Connect</title>
+    <link rel="stylesheet" href="./Style/Register.css" />
+  </head>
+  <body>
+    <header
+      style="
+        background-image: linear-gradient(
+            rgba(4, 9, 30, 0.7),
+            rgba(4, 9, 30, 0.7)
+          ),
+          url(./images/enroll.jpg);
+      "
+      class="sub-header"
+    >
+      <nav>
+        <a
+          href="index.html"
+          style="
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >Edu Connect</a
+        >
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutUs.html">ABOUT</a></li>
+            <li><a href="items.html">MENU</a></li>
+            <li><a href="Reservation.html">ENROLL</a></li>
+            <li><a href="contactUs.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Course Enrollment</h1>
+    </header>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <form action="./PHP/Reservation.php" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <label for="course">Select Course</label>
+            <select name="course" id="course" required>
+              <option value="" disabled selected>Select Course</option>
+              <option value="software_engineering">BSc. (Hon's) in Software Engineering</option>
+              <option value="information_technology">BSc. (Hon's) in Information Technology</option>
+              <option value="data_science_technology">BSc. (Hon's) in Data Science Technology</option>
+              <option value="maritime_operations">BSc. (Hon's) in Maritime Operations</option>
+              <option value="marine_engineering_officer_cadet">Marine Engineering Officer Cadet Program</option>
+              <option value="banking_finance">BBA (Honours) in Banking & Finance</option>
+              <option value="human_resources_management">BMgt. (Honours) in Human Resources Management</option>
+              <option value="electronic_telecommunication_engineering">BSc (Hons) in Engineering in Electronic & Telecommunication Engineering</option>
+              <option value="logistics_transportation">BSc. Honours in Logistics & Transportation</option>
+              <option value="civil_engineering">BSc. (Hon's) in Civil Engineering</option>
+              <option value="mechanical_engineering">BSc. (Hon's) in Mechanical Engineering</option>
+              <option value="electric_engineering">BSc. (Hon's) in Electric Engineering</option>
+              <option value="physical_science">BSc (Hon's) in Physical Science</option>
+              <option value="chemical_science">BSc (Hons) in Chemical Science</option>
+              <option value="foundation_sciences">Foundation Program For Sciences</option>
+              <option value="law">LL.B. (Hon's) in Law</option>
+            </select>
+            <label for="enroll-date">Preferred Start Date</label>
+            <input type="date" id="enroll-date" name="enroll_date" required />
+            <textarea name="comments" placeholder="Your Education Qualifications" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Enroll Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>EDUCONNECT - Learn. Connect. Grow.</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      window.onload = function () {
+        if (window.location.search.includes("success=1")) {
+          alert("Enrollment successful!");
+        }
+      };
+    </script>
+  </body>
+</html>
